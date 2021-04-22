@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+.el-breadcrumb {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.el-card {
+    box-shadow: 0 1px 1px rgba(65, 45, 45, 0.15) !important;
+}
+
+.el-table {
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+
+/**修改全局的滚动条*/
+/**滚动条的宽度*/
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccced1;
+    border-radius: 4px;
+}
+
+.el-steps {
+    margin: 15px 0;
+}
+  
+.el-step__title {
+    font-size: 12px !important;
+}
+
+.ql-editor {
+    min-height: 300px;
+    
+  }

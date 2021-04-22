@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.isProduction ? '' : 'dev - ' %>电商后台管理系统</title>
+
+    <% if (htmlWebpackPlugin.options.isProduction) { %>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 富文本样式 -->
+    <link rel="stylesheet" href="//cdn.staticfile.org/quill/1.3.4/quill.snow.min.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/quill/1.3.4/quill.bubble.min.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/quill/1.3.4/quill.core.min.css">
+
+    <!-- 引入脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.0/dist/echarts.min.js"></script>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- 富文本编辑器 -->
+    <script src="https://cdn.staticfile.org/quill/1.3.4/quill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-quill-editor@3.0.6/dist/vue-quill-editor.min.js"></script>
+
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
